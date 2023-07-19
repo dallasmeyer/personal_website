@@ -9,28 +9,29 @@ body h2 {
 }
 
 
-.topnav {
-  background-color: black;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
+  background-color: #333;
 }
 
-/* links inside navigation bar */
-
-.topnav a {
-  color: white;
-  display: block;
+li {
   float: left;
-  text-align: center;
-  text-decoration: none;
-  padding: 20px;
 }
 
-/* link hover */
-.topnav a:hover {
-  background-color: gray;
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
+li a {
+  display: block;
   color: white;
+  padding: 14px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
 }
