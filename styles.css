@@ -1,13 +1,39 @@
-  a {
+a {
     color: inherit;
     text-decoration: inherit;
   }
+  
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  position: relative; /* Make the body a positioning context */
+  color: #ffffff; /* Adjust the text color for readability */
+  padding-top: 150px;
+}
 
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-  }
+body::before {
+  content: ""; /* Create an empty content for the pseudo-element */
+  background-image: url('waterpic.jpg'); /* Adjust the path based on your directory structure */
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Move the pseudo-element behind the content */
+}
+
+.translucent-box {
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity with the last parameter (0.5 for 50% opacity) */
+  padding: 20px; /* Adjust the padding as needed */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+}
+/* Additional styles for the rest of your content */
+
+
   ::selection {
     background-color: #f7ca18;
     color: #1b1b1b;
@@ -16,7 +42,8 @@
     width: 100%;
     background-color: #0b0b0b;
     position: fixed;
-    bottom: 0;
+    /* bottom: 0; */
+    top: 0;
     height: 100px;
     overflow: hidden;
   }
@@ -47,6 +74,11 @@
     font-weight: 800;
     transform: translateY(100%);
   }
+  nav a {
+  display: block; /* Make the anchor tag a block-level element */
+  height: 100%; /* Cover the entire container height */
+  }
+  
   nav li.active {
     background-color: #151515;
     color: #efefef;
@@ -120,9 +152,9 @@
     transform: translateY(0);
   }
   section {
-    background-color: #1b1b1b;
+    /* background-color: #1b1b1b; */
     height: 100vh;
-    display: flex;
+    /* display: flex; */
   }
   section .title {
     max-width: 60%;
@@ -131,7 +163,8 @@
     transform: translateY(-50px);
     margin: 0 auto;
     overflow: hidden;
-    padding-bottom: 10px;
+    padding-top: 80px; /*So doesn't peek out of tbox*/
+    padding-bottom: 10px; /* adds the under-line */
   }
   section .title span {
     display: inline-block;
