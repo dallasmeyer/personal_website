@@ -2,7 +2,11 @@ a {
     color: inherit;
     text-decoration: inherit;
   }
-  
+
+iframe {
+  display: block; margin: 0 auto;
+}
+
 background {
   content: ""; /* Create an empty content for the pseudo-element */
   background-image: url('waterpic.jpg'); /* Adjust the path based on your directory structure */
@@ -21,6 +25,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
   position: relative; /* Make the body a positioning context */
   color: #ffffff; /* Adjust the text color for readability */
   padding-top: 150px;
