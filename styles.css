@@ -32,12 +32,13 @@ background {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Tahoma', sans-serif;
   font-size: 18px;
   position: relative; /* Make the body a positioning context */
   color: #ffffff; /* Adjust the text color for readability */
   padding-top: 150px;
-  cursor: url('assets/penguin_cursor.gif') 12 12, auto;
+  /* cursor: url('assets/penguin_cursor.gif') 12 12, auto; */
 }
 
 
@@ -202,12 +203,13 @@ body {
     display: inline-block;
     margin-left: 0.5rem;
     text-decoration: none;
-    color: #f7ca18;
+    /* color: #f7ca18; */
+    color: #00D004;
   }
   section .title span a::after {
     content: "";
     height: 2px;
-    background-color: #f7ca18;
+    background-color: #00D004;
     position: absolute;
     bottom: -10px;
     left: 0;
@@ -283,7 +285,7 @@ body {
       width: 0;
     }
     100% {
-      width: 30px;
+      width: 75px;
     }
   }
   @-webkit-keyframes linkAfter {
@@ -291,7 +293,7 @@ body {
       width: 0;
     }
     100% {
-      width: 30px;
+      width: 75px;
     }
   }
   @-o-keyframes linkAfter {
@@ -299,7 +301,7 @@ body {
       width: 0;
     }
     100% {
-      width: 30px;
+      width: 75px;
     }
   }
   @keyframes linkAfter {
@@ -307,7 +309,7 @@ body {
       width: 0;
     }
     100% {
-      width: 30px;
+      width: 75px;
     }
   }
 
