@@ -17,7 +17,7 @@ img {
 
 background {
   content: ""; /* Create an empty content for the pseudo-element */
-  background-image: url('assets/waterpic.jpg'); /* Adjust the path based on your directory structure */
+  background-image: url('assets/cyberpic.jpg'); /* Adjust the path based on your directory structure */
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
